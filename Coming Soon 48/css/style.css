@@ -1,0 +1,280 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+input,
+select,
+textarea,
+button,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Product Sans', sans-serif;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 46px 67px;
+    border-bottom: 2px solid #CBCBCB;
+}
+
+header .logo .logo-text {
+    font-size: 40px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul li a {
+    margin-right: 100px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section .left .text-1 {
+    font-size: 64px;
+    margin-bottom: 41px;
+}
+
+.section .left .text-2 {
+    font-size: 36px;
+    margin-bottom: 92px;
+}
+
+.section .left .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 41px;
+}
+
+.section .left .date .time {
+    margin-bottom: 11px;
+    font-weight: 700, Bold;
+    font-size: 43px;
+}
+
+.section .left .date .day {
+    font-size: 24px;
+}
+
+.section .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section .social-media button {
+    padding: 16px 40px;
+    border-radius: 40px;
+    border: 1px solid #CBCBCB;
+    background-color: #fff;
+    margin-right: 48px;
+    font-size: 20px;
+    border: 2px solid rgba(203, 203, 203, 1);
+}
+
+.section .social-media button i {
+    margin-left: 8px;
+    color: #000;
+}
+
+.section .social-media .icons i {
+    margin-right: 46px;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.3);
+    line-height: 40px;
+}
+
+@media screen and (max-width: 1290px) {
+    header {
+        padding: 16px 37px;
+    }
+    .menu ul li a {
+        margin-right: 40px;
+    }
+    .section .left .text-1 {
+        font-size: 32px;
+    }
+    .section .left .text-2 {
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
+    .section .left .date {
+        margin-bottom: 20px;
+    }
+    .section .left .date .time {
+        font-size: 22px;
+    }
+    .section .left .date .day {
+        font-size: 16px;
+    }
+    .section .social-media button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    .section .social-media .icons i {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .background a img {
+        width: 60%;
+        height: 60%;
+    }
+}

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Inter:wght@300;400;500&family=Montserrat:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 584px;
+    height: 587px;
+    display: flex;
+}
+
+.menu {
+    margin: auto;
+    width: 414px;
+    height: 400px;
+    padding: 20px;
+    border: 1px solid #132B50;
+    border-radius: 10px;
+}
+
+.menu h1 {
+    color: #132B50;
+    font-size: 32px;
+}
+
+.user {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+}
+
+.user .user-info {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user .user-info .account {
+    font-weight: 500;
+    color: #132B50;
+    cursor: default;
+}
+
+.user .user-info .name {
+    font-weight: 700;
+}
+
+.password {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.password span {
+    color: #132B50;
+}
+
+.password .input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.password .input input {
+    outline: none;
+    margin-top: 8px;
+    font-size: 16px;
+    color: #132B50;
+    padding: 5px 5px 0 50px;
+    border-radius: 8px;
+    width: 370px;
+    height: 59px;
+    border: 1px solid #132B50;
+    font-weight: 700;
+}
+
+.password .input .fa-lock {
+    position: absolute;
+    font-size: 20px;
+    bottom: 20px;
+    left: 15px;
+    color: #132B50;
+}
+
+.password .input a {
+    margin-left: 16px;
+    color: #132B50;
+}
+
+.password .submit {
+    display: flex;
+    align-items: center;
+}
+
+.password .label {
+    display: flex;
+    display: inline-block;
+    margin-top: 32px;
+}
+
+.password .label input {
+    display: none;
+}
+
+.password .label .checkbox {
+    background-color: #fff;
+    width: 60px;
+    height: 36px;
+    border-radius: 36px;
+    border: 1px solid #132B50;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password .label .checkbox .cycle {
+    width: 22px;
+    height: 22px;
+    left: 5px;
+    border-radius: 50%;
+    background-color: #132B50;
+    position: absolute;
+    display: block;
+    transition: left 0.5s ease-in-out;
+}
+
+.password .label input:checked+.checkbox .cycle {
+    left: 32px;
+}
+
+.submit span {
+    color: #132B50;
+    margin-left: 15px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.submit button {
+    width: 103px;
+    height: 51px;
+    margin-left: auto;
+    margin-top: 18px;
+    background-color: #132B50;
+    color: #fff;
+    padding: 16px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+}
+
+.reset-text {
+    color: #132B50;
+    display: block;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-top: 10px;
+}
