@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600&family=Neonderthaw&display=swap');
+:root {
+    --color-black: #2d2d2d;
+    --color-white: #fff;
+    --color-green: #009379;
+    --color-red: #ff6250;
+    --color-pink: #f3afa8;
+    --color-grey: #f3f3f3;
+    --color-yellow: #f7d684;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 102.5px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.body-text {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.h1-mobile {
+    font-weight: 600;
+    font-size: 65px;
+}
+
+.red-box {
+    width: 125px;
+    height: 130px;
+    background-color: var(--color-red);
+    border-top-right-radius: 150px;
+}
+
+.green-box {
+    width: 125px;
+    height: 130px;
+    background-color: var(--color-green);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.pink-box {
+    width: 125px;
+    height: 130px;
+    background-color: var(--color-pink);
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+body {
+    background-color: var(--color-white);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 0px), linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 0px);
+    background-size: 1px 51px, 51px 1px, 0px 0px, 0px 0px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+/* header */
+
+.container .header {
+    width: 100%;
+    height: 80px;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header .logo a {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-black);
+    text-decoration: underline;
+    padding: 5px 10px;
+}
+
+.container .header .logo a:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.container .header .menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.container .header .menu ul li a {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-black);
+    text-decoration: underline;
+    padding: 5px 10px;
+}
+
+.container .header .menu ul li:last-child a {
+    margin-right: 0;
+}
+
+.container .header .menu ul li a:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+
+/* content */
+
+.content {
+    padding: 0 100px;
+}
+
+.content .about {
+    display: flex;
+    align-items: center;
+    padding: 93px 14px 0 0;
+}
+
+.content .about .left .subtitle {
+    margin-bottom: 46px;
+}
+
+.content .about .left h1 {
+    margin-bottom: 50px;
+}
+
+.content .about .left .body-text {
+    width: 417px;
+}
+
+.content .about .right .profile-image {
+    width: 400px;
+    height: 550px;
+    position: relative;
+    background-image: url(../img/profile-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.content .about .right .profile-image .red-box {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+
+.content .about .right .profile-image .green-box {
+    position: absolute;
+    bottom: 64px;
+    left: -62px;
+}
+
+.content .brand {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    gap: 70px;
+}
+
+.content .brand .brand-box {
+    display: flex;
+    align-items: center;
+}
+
+.content .brand .brand-box .logo-name {
+    margin-right: 100px;
+}
+
+.content .deising-box {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.content .deising-box .deising {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+}
+
+.content .deising-box .deising h3 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.content .lastes-work {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .lastes-work .works {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.content .lastes-work .work-box {
+    width: 330px;
+    height: 420px;
+    margin-right: 45px;
+}
+
+.content .lastes-work .work-box:last-child {
+    margin-right: 0;
+}
+
+.content .lastes-work .work-box .subtitle {
+    margin: 25px 0 10px 0;
+}
+
+.content .clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.content .clients .comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .clients .comment .comment-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 55px;
+    width: 330px;
+    height: 400px;
+    background-color: var(--color-grey);
+    padding: 25px 30px;
+    margin-right: 45px;
+}
+
+.content .clients .comment .comment-box:last-child {
+    margin-right: 0;
+}
+
+.content .clients .comment .comment-box .people {
+    display: flex;
+}
+
+.content .clients .comment .comment-box .people .profile-img {
+    margin-right: 20px;
+}
+
+.content .clients .comment .comment-box .people .more .star {
+    margin-bottom: 10px;
+}
+
+.content .lets-work {
+    margin-top: 55px;
+    display: flex;
+}
+
+.content .lets-work .text {
+    margin-right: 190px;
+}
+
+.content .lets-work .text .body-text {
+    margin-top: 35px;
+    margin-bottom: 50px;
+    width: 400px;
+}
+
+.content .lets-work .text .social a {
+    width: 36px;
+    height: 36px;
+    margin-right: 13px;
+}
+
+.content .lets-work .form-area form {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .lets-work .form-area form input {
+    width: 530px;
+    height: 70px;
+    background-color: var(--color-grey);
+    margin-bottom: 18px;
+    padding: 20px 33px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.content .lets-work .form-area form textarea {
+    width: 530px;
+    height: 215px;
+    background-color: var(--color-grey);
+    font-size: 17px;
+    font-weight: 400;
+    padding: 30px;
+    resize: none;
+}
+
+.content .lets-work .form-area form button {
+    width: 235px;
+    height: 80px;
+    margin-top: 45px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1130px) {
+    .red-box {
+        width: 82px;
+        height: 85px;
+        background-color: var(--color-red);
+        border-top-right-radius: 150px;
+    }
+    .green-box {
+        width: 82px;
+        height: 85px;
+        background-color: var(--color-green);
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    .pink-box {
+        width: 82px;
+        height: 85px;
+        background-color: var(--color-pink);
+        border-top-left-radius: 70px;
+        border-top-right-radius: 70px;
+    }
+    .container {
+        max-width: 375px;
+    }
+    /* header */
+    .container .header {
+        padding: 25px 0;
+        justify-content: center;
+    }
+    .container .header .menu {
+        display: none;
+    }
+    .content {
+        padding: 0 27px;
+    }
+    .content .about {
+        flex-direction: column;
+        text-align: center;
+        padding: 44px 0 0 0;
+    }
+    .content .about .left .subtitle {
+        margin-bottom: 23px;
+    }
+    .content .about .left h1 {
+        margin-bottom: 20px;
+        font-size: 65px;
+        line-height: 66px;
+        font-weight: 600;
+    }
+    .content .about .left .body-text {
+        width: auto;
+        margin-bottom: 70px;
+    }
+    .content .about .right .profile-image {
+        width: 318px;
+        height: 370px;
+        background-image: url(../img/profile-1-mobile.png);
+    }
+    .content .about .right .profile-image .red-box {
+        top: 0;
+        right: -10px;
+    }
+    .content .about .right .profile-image .green-box {
+        bottom: 40px;
+        left: -40px;
+    }
+    .content .brand {
+        margin-top: 80px;
+        gap: 70px;
+    }
+    .content .deising-box {
+        flex-direction: column;
+        margin-top: 125px;
+    }
+    .content .lastes-work .works {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .content .lastes-work .work-box {
+        width: 320px;
+        height: 420px;
+        margin-right: 0;
+        margin-top: 60px;
+    }
+    .content .clients .comment {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content .clients .comment .comment-box {
+        margin-right: 0;
+    }
+    .content .lets-work {
+        margin-top: 155px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .content .lets-work .text {
+        margin-right: 0;
+        margin-bottom: 75px;
+    }
+    .content .lets-work .text .body-text {
+        width: auto;
+    }
+    .content .lets-work .form-area form input {
+        width: 320px;
+        height: 70px;
+        padding: 25px 20px;
+    }
+    .content .lets-work .form-area form textarea {
+        width: 320px;
+        height: 215px;
+        padding: 30px 20px;
+    }
+    .content .lets-work .form-area form button {
+        width: 320px;
+        margin-bottom: 50px;
+    }
+}
