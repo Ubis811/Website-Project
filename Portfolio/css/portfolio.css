@@ -286,6 +286,7 @@ body {
 
 .content .lets-work {
     margin-top: 55px;
+    margin-bottom: 50px;
     display: flex;
 }
 
@@ -456,6 +457,5 @@ body {
     }
     .content .lets-work .form-area form button {
         width: 320px;
-        margin-bottom: 50px;
     }
 }
